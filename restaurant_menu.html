@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMMELIER</title>
+</head>
+<style>
+    body{
+        background-color: rgb(228, 221, 211);
+    }
+    header{
+        background-color: rgb(202, 198, 193);
+        padding: 20px;
+        text-align: center;
+    }
+    nav{
+        text-align: left;
+    }
+    footer{
+        
+        text-align: center;
+        background-color:rgb(202, 198, 193) ;
+    }
+    nav .nav-links {
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Coloca los enlaces en una fila */
+    gap: 20px;  /* Espacio entre los enlaces */
+}
+</style>
+<body>
+    <header>
+        <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbdtXFgnGvtugaRADc2a3HsseY-hwM6NAvsQ&s"
+        width=10%
+        id="header-img"
+        />
+        <h1>Sommelier: patisserie et chocolat </h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#order-form">Order form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Menu">
+            <h2> Menu </h2>
+            <article id="dessert1">
+                <img
+                width="20%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmcyeE8yri2Drj-8YNWyUweXshv71YereZCA&s"
+                />
+                <h3> Santa's Hat </h3>
+                <p>Delicious entremet, filled with chocolate mousse and cranberry jelly, <br> 
+                    bathed with mirror glase and homemade marshmallows <i><b>-------$5.00</b></i></p>
+            </article>
+            <article id="dessert2">
+                <img
+                width="20%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0qISg_kJOnZS1rBueQvV6LOmXXodHPBCEA&s"
+                />
+                <h3> Sugar Free Cookies </h3>
+                <p>Our homemade chocolate chips cookies with a top of white chocolate <br> 
+                    The best part? These are sugar and gluten free baby!! <i><b>-------$3.00</b></i></p>
+            </article>
+            <article id="dessert3">
+                <img
+                width="20%"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmoCi_FpWfMm6Pq0j2Z6We0DUi6D814_NQkg&s"
+                />
+                <h3> Chocolate pops </h3>
+                <p>With a Nutella filling and a white chocolate glase <br> 
+                    These are perfect for a gift or just to get yourself a sweet treat! <i><b>-------$1.50</b></i></p>
+            </article>
+        </section>
+        <section id="order-form">
+            <h2> Craving something? Lets order! </h2>
+            <p>Please tell us the amount of items you would like to order:</p>
+            <form>
+                <label for="cantidad-santas">Santa's Hat</label>
+                <input type="number" min="0" max="20">
+                <br><br>
+                <label for="cantidad-cookies">Sugrar Free Cookies</label>
+                <input type="number" min="0" max="10">
+                <br><br>
+                <label for="cantidad-pops">Chocolate Pops</label>
+                <input type="number" min="0" max="20">
+                <br><br>
+                <label for="extras"> Do you need some extras? </label>
+                <BR><BR>
+                <input type="checkbox">Napkins
+                <input type="checkbox">Fork
+                <p>Any spetial requests?</p><textarea id="requests" rows="10" cols="30" placeholder="write them here"></textarea>
+                <br><br>
+                <button type="submit"> Go to checkout>> </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <br><br>
+        <p>Made with love by @rgarzona1</p>
+    </footer>
+</body>
+</html>
